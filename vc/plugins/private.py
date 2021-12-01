@@ -25,7 +25,7 @@ async def start(client, message):
                 [
                     InlineKeyboardButton(
                         text="Repository",
-                        url="https://github.com/kaal0408/VideoStreamBot",
+                        url="https://github.com/kaal0408/VcStream",
                     )
                 ],
                 [
@@ -53,7 +53,7 @@ async def repo(client, message):
                 [
                     InlineKeyboardButton(
                         text="Repository",
-                        url="https://github.com/kaal0408/VideoStreamBot",
+                        url="https://github.com/kaal0408/VcStream",
                     )
                 ]
             ]
