@@ -4,7 +4,7 @@ from .. import bot
 from ..functions import admin_check
 
 
-@bot.on_message(filters.command("vpause") 
+@bot.on_message(filters.command("vpause"))
 async def pause(client, message):
     if not Calls.is_running:
         return await message.reply(
@@ -21,7 +21,7 @@ async def pause(client, message):
     return await message.reply("The Video Has Been Paused ⏸ Successfully!")
 
 
-@bot.on_message(filters.command("vresume") & filters.chat(chat_id))
+@bot.on_message(filters.command("vresume")) 
 async def resume(client, message):
     if not Calls.is_running:
         return await message.reply("There is Nothing Streaming!")
