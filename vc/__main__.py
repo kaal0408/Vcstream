@@ -18,16 +18,7 @@ bot = Client(
     api_id=vc.config.API_ID,
     api_hash=vc.config.API_HASH,
     bot_token=vc.config.BOT_TOKEN,
-    plugins=vsb,
-)
-
-
-bot = Client(
-    "bot:",
-    api_id=vc.config.API_ID,
-    api_hash=vc.config.API_HASH,
-    bot_token=vc.config.BOT_TOKEN,
-    plugins=dict(root="vc.plugins"),
+    plugins=vsb
 )
 
 bot.start()
