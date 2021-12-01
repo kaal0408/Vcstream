@@ -22,8 +22,8 @@ bot = Client(
 )
 
 
-bot = bot(
-    ":memory:",
+bot = Client(
+    "bot:",
     api_id=vc.config.API_ID,
     api_hash=vc.config.API_HASH,
     bot_token=vc.config.BOT_TOKEN,
