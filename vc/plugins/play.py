@@ -93,40 +93,4 @@ async def skip(client, message):
         return await message.reply(e)
 
 
-# Playout Ended
-@Client.on_video_playout_ended
-async def media_ended(_, __):
-    if que.empty():
-        await bot.send_message(
-            chat_id, "No More Videos In Queue!\n\nLeaving Video Chat!"
-        )
-        return await Calls.stop()
-    else:
-        process = await bot.send_message(chat_id, "Processing!")
-        stuff = await que.get()
-    try:
-        if "DOWNLOADS" in stuff:
-            video, title = stuff, "Telegram Video"
-            if cicon:
-                try:
-                    thumb = cicon
-                except:
-                    thumb = "./img.jpg"
-            else:
-                thumb = "./img.jpg"
-            await Calls.start_video(video, repeat=False)
-        else:
-            thumb, video, title = await loop.run_in_executor(
-                None, youtube_stream, stuff
-            )
-        await process.delete()
-        await Calls.start_video(video, repeat=False)
-        global number
-        number -= 1
-        return await bot.send_photo(
-            chat_id,
-            photo=thumb,
-            caption=f"Started Streaming!\n\n**Video🎥** : **__{title}__**",
-        )
-    except Exception as e:
-        return await bot.send_message(chat_id, e)
+# 
