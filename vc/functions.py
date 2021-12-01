@@ -3,7 +3,6 @@ import asyncio
 
 from youtubesearchpython import VideosSearch
 
-from vc.config import CUSTOM_ICON as cicon
 from misc import Calls, bot
 
 loop = asyncio.get_event_loop()
