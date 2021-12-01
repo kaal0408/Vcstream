@@ -2,7 +2,7 @@ import asyncio
 
 from pyrogram import filters
 
-from .. import Calls, bot, chat_id
+from .. import bot,
 from ..functions import (admin_check, cicon, user_input, video_stream,
                          youtube_stream)
 
@@ -15,7 +15,7 @@ loop = asyncio.get_event_loop()
 
 
 @bot.on_message(
-    filters.command(["vplay", "vtelegram"]) & filters.chat(chat_id)
+    filters.command(["vplay", "vtelegram"]))
 )
 async def stream(client, message):
     reply = message.reply_to_message
@@ -54,7 +54,7 @@ async def stream(client, message):
 # Stop Video Chat
 
 
-@bot.on_message(filters.command("vstop") & filters.chat(chat_id))
+@bot.on_message(filters.command("vstop"))
 async def stop(client, message):
     if not Calls.is_running:
         return await message.reply("No Stream Going On!")
@@ -73,7 +73,7 @@ async def stop(client, message):
 # Skip Video Stream
 
 
-@bot.on_message(filters.command("vskip") & filters.chat(chat_id))
+@bot.on_message(filters.command("vskip"))
 async def skip(client, message):
     global number
     admins = await admin_check(client, message)
