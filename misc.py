@@ -24,7 +24,7 @@ bot = Client(
 
 # pytgcalls
 
-Calls = gcf(app).get_group_call()
+
 
 
 # Help Text
