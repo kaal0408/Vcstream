@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from .. import Calls, bot, chat_id
+from .. import vc, bot, chat_id
 from ..functions import admin_check
 
 
