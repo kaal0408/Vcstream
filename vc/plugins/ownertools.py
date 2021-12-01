@@ -9,13 +9,10 @@ from os import environ, execle
 import psutil
 from vc.config import (
     BOT_USERNAME,
-    GROUP_SUPPORT,
     HEROKU_API_KEY,
     HEROKU_APP_NAME,
     HEROKU_URL,
     OWNER_ID,
-    U_BRANCH,
-    UPSTREAM_REPO,
 )
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
