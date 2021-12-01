@@ -3,7 +3,7 @@ from typing import Union
 
 from pyrogram import filters
 
-from Musical.config import COMMAND_PREFIXES
+from vc.config import COMMAND_PREFIXES
 
 other_filters = filters.group & ~filters.edited & ~filters.via_bot & ~filters.forwarded
 other_filters2 = (
