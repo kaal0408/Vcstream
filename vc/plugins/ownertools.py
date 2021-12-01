@@ -7,7 +7,7 @@ from os import environ, execle
 
 
 import psutil
-from config import (
+from vc.config import (
     BOT_USERNAME,
     GROUP_SUPPORT,
     HEROKU_API_KEY,
