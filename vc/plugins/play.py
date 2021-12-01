@@ -16,7 +16,6 @@ loop = asyncio.get_event_loop()
 
 @bot.on_message(
     filters.command(["vplay", "vtelegram"]))
-)
 async def stream(client, message):
     reply = message.reply_to_message
     user_str = await user_input(message.text)
