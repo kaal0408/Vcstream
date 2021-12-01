@@ -81,7 +81,7 @@ async def start_private(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/kaal0408/VcMusic"
+                        "🌐 Source Code", url="https://github.com/kaal0408/Vcstream"
                     )
                 ],
             ]
