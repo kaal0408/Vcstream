@@ -4,7 +4,7 @@ from .. import bot
 from ..functions import admin_check
 
 
-@bot.on_message(filters.command("vpause") & filters.chat(chat_id))
+@bot.on_message(filters.command("vpause") 
 async def pause(client, message):
     if not Calls.is_running:
         return await message.reply(
