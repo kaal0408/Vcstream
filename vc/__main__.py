@@ -9,15 +9,15 @@ vsb = dict(root="vc/plugins")
 # Pyro Client
 app = Client(
     vc.config.SESSION_NAME,
-    api_id=config.API_ID,
-    api_hash=config.API_HASH,
+    api_id=vc.config.API_ID,
+    api_hash=vc.config.API_HASH,
     plugins=vsb,
 )
 bot = Client(
     "bot",
-    api_id=config.API_ID,
-    api_hash=config.API_HASH,
-    bot_token=config.BOT_TOKEN,
+    api_id=vc.config.API_ID,
+    api_hash=vc.config.API_HASH,
+    bot_token=vc.config.BOT_TOKEN,
     plugins=vsb,
 )
 
