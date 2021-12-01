@@ -24,8 +24,8 @@ bot = Client(
 
 bot = bot(
     ":memory:",
-    vc.config.API_ID,
-    vc.config.API_HASH,
+    api_id=vc.config.API_ID,
+    api_hash=vc.config.API_HASH,
     bot_token=vc.config.BOT_TOKEN,
     plugins=dict(root="vc.plugins"),
 )
