@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters
 
 from .. import bot
-from ..functions import (admin_check, user_input, video_stream,
+from ..functions import (admin_check, user_input, vc,
                          youtube_stream)
 
 que = asyncio.Queue()
