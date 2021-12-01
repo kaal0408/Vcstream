@@ -94,7 +94,7 @@ async def skip(client, message):
 
 
 # Playout Ended
-@Calls.on_video_playout_ended
+@Client.on_video_playout_ended
 async def media_ended(_, __):
     if que.empty():
         await bot.send_message(
