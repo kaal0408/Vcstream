@@ -1,6 +1,6 @@
 import asyncio
 
-import pafy
+
 from youtubesearchpython import VideosSearch
 
 from vc.config import CUSTOM_ICON as cicon
