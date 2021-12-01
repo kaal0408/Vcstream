@@ -16,7 +16,7 @@ bot = Bot(
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="Musical.modules"),
+    plugins=dict(root="vc.plugins"),
 )
 
 bot.start()
