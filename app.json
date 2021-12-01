@@ -1,9 +1,9 @@
 {
-  "name": "Vc-Music",
-  "logo": "https://telegra.ph/file/ee4875a6eac21f24be3e2.jpg",
+  "name": "Vc",
+  "logo": ".",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/PsychoBots/Musical-Vc",
+  "repository": "https://github.com/kaal0408/Vcstream",
   "stack": "heroku-20",
   "buildpacks": [
    {
@@ -34,12 +34,12 @@
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "Psychobots_chat"
+      "value": "MeowUserbot"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "Lovishmusic"
+      "value": "vcstream"
     },
     "ASSISTANT_NAME": {
       "description": "Your MusicPlayer's assistant Username without @.",
@@ -53,12 +53,12 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/ee4875a6eac21f24be3e2.jpg"
+      "value": ""
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
       "required": false,
-      "value": "Psycho_Bots"
+      "value": "Murat_30_God"
     },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
