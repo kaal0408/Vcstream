@@ -5,7 +5,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from config import BOT_USERNAME
+from vc.config import BOT_USERNAME
 from helpers.decorators import errors, sudo_users_only
 from helpers.filters import command
 
