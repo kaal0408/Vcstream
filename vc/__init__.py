@@ -1,4 +1,4 @@
 
-from misc import HELP, Calls, app, bot
+from misc import HELP, app, bot
 
 
