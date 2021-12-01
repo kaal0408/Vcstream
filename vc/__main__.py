@@ -22,7 +22,7 @@ bot = Client(
 )
 
 
-bot = Bot(
+bot = bot(
     ":memory:",
     API_ID,
     API_HASH,
