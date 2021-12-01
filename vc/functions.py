@@ -3,7 +3,7 @@ import asyncio
 
 from youtubesearchpython import VideosSearch
 
-from misc import Calls, bot
+from misc import bot
 
 loop = asyncio.get_event_loop()
 
