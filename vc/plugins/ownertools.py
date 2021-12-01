@@ -5,7 +5,7 @@ import traceback
 from functools import wraps
 from os import environ, execle
 
-import heroku3
+
 import psutil
 from config import (
     BOT_USERNAME,
