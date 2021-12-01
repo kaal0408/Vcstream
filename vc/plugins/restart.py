@@ -1,6 +1,6 @@
 import os
 from pyrogram import filters
-from .. import Calls, bot, chat_id
+from .. import bot
 from ..functions import admin_check
 
 @bot.on_message(filters.command("restart") & filters.chat(chat_id))
