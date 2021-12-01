@@ -4,7 +4,7 @@ import asyncio
 
 from pyrogram import idle
 
-from misc import Calls, app, bot
+from misc import app, bot
 
 import vc.config
 
