@@ -1,5 +1,10 @@
 from pyrogram import Client
 from pytgcalls import GroupCallFactory as gcf
+import asyncio
+
+from pyrogram import idle
+
+from misc import Calls, app, bot
 
 import vc.config
 
