@@ -8,7 +8,7 @@ vsb = dict(root="vc/plugins")
 
 # Pyro Client
 app = Client(
-    config.STRING_SESSION,
+    vc.config.STRING_SESSION,
     api_id=config.API_ID,
     api_hash=config.API_HASH,
     plugins=vsb,
