@@ -2,8 +2,8 @@ from typing import Dict
 
 from pytgcalls import GroupCall
 
-from Musical.services.callsmusic import client
-from Musical.services.queues import queues
+from vc.services.callsmusic import client
+from vc.services.queues import queues
 
 
 instances: Dict[int, GroupCall] = {}
