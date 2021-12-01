@@ -2,7 +2,7 @@ import asyncio
 
 from pyrogram import filters
 
-from .. import bot,
+from .. import bot
 from ..functions import (admin_check, cicon, user_input, video_stream,
                          youtube_stream)
 
